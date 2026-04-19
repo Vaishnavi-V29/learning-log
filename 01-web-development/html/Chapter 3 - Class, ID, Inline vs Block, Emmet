@@ -1,0 +1,86 @@
+# 📘 Chapter 3 — Class, ID, Inline vs Block, Emmet
+
+## Class (group control)
+
+```html
+<p class="red">One</p>
+<p>Two</p>
+<p class="red">Three</p>
+```
+
+```css
+.red { color: red; }
+```
+---
+
+## ID
+
+* used to identify one unique element
+* should not repeat
+* used for CSS or JavaScript targeting
+
+Example:
+
+```html
+<h1 id="main">Title</h1>
+```
+
+`id` = unique name for one element
+---
+
+## Block vs Inline
+
+block | inline
+takes full line | takes required width
+different lines | same line
+example: div | span
+
+Block → inline conversion:
+
+```html
+<p style="display: inline;"></p>
+```
+---
+
+## Emmet
+
+Shortcut tool for faster HTML writing.
+* `!` → HTML skeleton
+* `ul>li*3` → nested list
+* `article+section` → siblings
+* `p#idname` → id
+* `p.class1.class2` → classes
+* `article{text}` → text content
+
+Examples:
+
+Nested:
+
+```
+ul>li*3
+```
+
+Sibling:
+
+```
+article+section
+```
+
+ID:
+
+```
+p#babbar
+```
+
+Class:
+
+```
+p.dog.cat
+```
+
+Text:
+
+```
+article{this is article}
+```
+---
